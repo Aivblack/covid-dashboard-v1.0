@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <title>COVID Tracker - UPHSD</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <header class="landing-page">
+        <section class="header">
+            <div class="logo">
+            <img src="#" alt="logo">
+            <h1>CoViD-19 Case Tracker</h1>
+            </div>
+            <select name="country" id="coutry">
+                <option value="#">- Select a country -</option>
+            </select>
+        </section>
+        <section class="graph">
+            <h2>Philippines</h2>
+        </section>
+        <aside class="cases">
+            <div class="box total-cases">
+                <p id="total-count"></p>
+                <h4>Total Cases</h4>
+            </div>
+            <div class="box active-cases">
+                <p id="active-count"></p>
+                <h4>Active Cases</h4>
+            </div>
+            <div class="box recoveries">
+                <p id="recoveries-count"></p>
+                <h4>Recoveries</h4>
+            </div>
+            <div class="box deaths">
+                <p id="deaths-count"></p>
+                <h4>Deaths</h4>
+            </div>
+            <div>
+                <small>Last update: <span id="update"></span></small>
+            </div>
+        </aside>
+    </header>
+
+    <!-- Global Cases -->
+    <main class="global-case">
+        <h2>Global Cases</h2>
+    </main>
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

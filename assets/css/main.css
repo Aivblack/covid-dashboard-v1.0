@@ -1,0 +1,96 @@
+/* Google Font */
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Landing Page */
+.landing-page {
+    background-color: #EEE;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "graph cases";
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 4em 1fr;
+}
+
+.landing-page .header{
+    background-color: #3a3849;
+    color: white;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing-page .logo {
+    display: flex;
+    margin-left: 2em;
+}
+
+.landing-page .logo h1 {
+    margin-left: 1em;
+}
+
+.landing-page select {
+    margin-right: 2em;
+    height: 30px;
+    width: 200px;
+}
+
+.landing-page .graph {
+    background-color: #DDD;
+    grid-area: graph;
+}
+
+.landing-page .cases {
+    background-color: #CCC;
+    grid-area: cases;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* CASES RIGHT SIDE */
+.landing-page .cases .box {
+    height: 75px;
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2em;
+}
+
+.landing-page .cases .box p {
+    font-size: 36px;
+    color: #3a3849;
+}
+
+.landing-page .cases .total-cases {
+    border-right: 3px solid blue;
+}
+
+.landing-page .cases .active-cases {
+    border-right: 3px solid red;
+}
+
+.landing-page .cases .recoveries {
+    border-right: 3px solid green;
+}
+
+.landing-page .cases .deaths {
+    border-right: 3px solid black;
+}
+
+/* Global Case */
+.global-case {
+    height: 100vh;
+}
