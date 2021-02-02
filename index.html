@@ -15,7 +15,6 @@
     <header class="landing-page">
         <section class="header">
             <div class="logo">
-            <img src="#" alt="logo">
             <h1>CoViD-19 Case Tracker</h1>
             </div>
             <select name="country" id="coutry">
@@ -24,34 +23,31 @@
         </section>
         <section class="graph">
             <h2>Philippines</h2>
+            <canvas id="myChart"></canvas>
         </section>
         <aside class="cases">
             <div class="box total-cases">
                 <p id="total-count"></p>
-                <h4>Total Cases</h4>
+                <h4 id="label-total">Total Cases</h4>
             </div>
             <div class="box active-cases">
                 <p id="active-count"></p>
-                <h4>Active Cases</h4>
+                <h4 id="label-active">Active Cases</h4>
             </div>
             <div class="box recoveries">
                 <p id="recoveries-count"></p>
-                <h4>Recoveries</h4>
+                <h4 id="label-recoveries">Recoveries</h4>
             </div>
             <div class="box deaths">
                 <p id="deaths-count"></p>
-                <h4>Deaths</h4>
+                <h4 id="label-deaths">Deaths</h4>
             </div>
             <div>
-                <small>Last update: <span id="update"></span></small>
+                <small>Last update: <span id="update"></span></small><br>
+                <small>Source: about-corona.net</small>
             </div>
         </aside>
     </header>
-
-    <!-- Global Cases -->
-    <main class="global-case">
-        <h2>Global Cases</h2>
-    </main>
 
 
 

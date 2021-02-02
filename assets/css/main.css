@@ -1,10 +1,12 @@
 /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 /* Basic Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Landing Page */
@@ -48,6 +50,10 @@
     grid-area: graph;
 }
 
+.landing-page .graph h2 {
+    text-align: center;
+}
+
 .landing-page .cases {
     background-color: #CCC;
     grid-area: cases;
@@ -72,6 +78,22 @@
 .landing-page .cases .box p {
     font-size: 36px;
     color: #3a3849;
+}
+
+#label-total {
+    color: blue;
+}
+
+#label-active {
+    color: red;
+}
+
+#label-recoveries {
+    color: green;
+}
+
+#label-deaths {
+    color: black;
 }
 
 .landing-page .cases .total-cases {
