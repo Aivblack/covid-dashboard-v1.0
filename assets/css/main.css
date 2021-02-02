@@ -21,6 +21,7 @@
     grid-template-rows: 4em 1fr;
 }
 
+/* Header section */
 .landing-page .header{
     background-color: #3a3849;
     color: white;
@@ -40,20 +41,24 @@
 }
 
 .landing-page select {
-    margin-right: 2em;
     height: 30px;
     width: 200px;
 }
 
+.landing-page button {
+    margin-right: 2em;
+    height: 30px;
+    width: 100px;
+}
+
+/* Body Section */
+/* Graph Section */
 .landing-page .graph {
     background-color: #DDD;
     grid-area: graph;
 }
 
-.landing-page .graph h2 {
-    text-align: center;
-}
-
+/* Cases Section */
 .landing-page .cases {
     background-color: #CCC;
     grid-area: cases;
@@ -63,7 +68,6 @@
     align-items: center;
 }
 
-/* CASES RIGHT SIDE */
 .landing-page .cases .box {
     height: 75px;
     width: 90%;
@@ -110,9 +114,4 @@
 
 .landing-page .cases .deaths {
     border-right: 3px solid black;
-}
-
-/* Global Case */
-.global-case {
-    height: 100vh;
 }

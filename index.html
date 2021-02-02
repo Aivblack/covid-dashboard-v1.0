@@ -4,27 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <title>COVID Tracker - UPHSD</title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+
     <!-- Landing Page -->
-    <header class="landing-page">
+    <main class="landing-page">
+        <!-- Header Section -->
         <section class="header">
             <div class="logo">
-            <h1>CoViD-19 Case Tracker</h1>
+                <h1>CoViD-19 Case Tracker</h1>
             </div>
-            <select name="country" id="coutry">
-                <option value="#">- Select a country -</option>
-            </select>
+
+            <div class="dropdown">
+                <select name="country" id="country">
+                    <option value="#">- Select a country -</option>
+                </select>
+                <button type="submit" onclick="selectCountry()">Proceed</button>
+            </div>
         </section>
+
+        <!-- Body Section -->
+        <!-- Graph -->
         <section class="graph">
-            <h2>Philippines</h2>
+            <p style="text-align: center; font-weight: bold; font-size: 21px;" id="country-name">Philippines</p>
             <canvas id="myChart"></canvas>
         </section>
+
+        <!-- Cases Section -->
         <aside class="cases">
             <div class="box total-cases">
                 <p id="total-count"></p>
@@ -47,10 +57,11 @@
                 <small>Source: about-corona.net</small>
             </div>
         </aside>
-    </header>
+    </main>
 
 
-
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
